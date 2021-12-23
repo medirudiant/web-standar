@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>medooo. || Standard Web</title>
+  </head>
+  <body>
+      
+
+    <nav>
+        <a href="#" class="back-home text-light">Back</a>
+        <div class="nav-logo text-light">
+            <a href="#"><h1>Medooo.</h1></a>
+        </div>
+    </nav>
+
+
+    <section class="basic-web-form bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class="web-basic-title mb-5">
+                      <h1>Standard web</h1>
+                      <hr>
+                      <div class="service-detailss">
+                          <div class="sdc open">12 days delivery</div>
+                          <div class="sdc open">5x revision</div>
+                          <div class="sdc open">3 pages max</div>
+                          <div class="sdc open">Standard design & responsive</div>
+                          <div class="sdc open">Infinityfree Hosting & Domain</div>
+                          <div class="sdc open">E-commerce functionality</div>
+                          <div class="sdc open">Content Management</div>
+                          <div class="sdc locked">File distribution</div>
+                      </div>
+                  </div>
+                  <form name="web-standard">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name : </label>
+                      <input type="text" class="form-control bg-dark text-light" id="name" aria-describedby="emailHelp" name="name" placeholder="Muhammad (example)">
+                    </div>
+                    <div class="mb-3">
+                      <label for="wa" class="form-label">Whatsapp : </label>
+                      <input type="text" class="form-control bg-dark text-light" id="wa" aria-describedby="emailHelp" name="wa" placeholder="+62 xxx xxxx xxxx">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email address : </label>
+                      <input type="email" class="form-control bg-dark text-light" id="email" aria-describedby="emailHelp" name="email" placeholder="myname@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="web-type" class="form-label">Web Type : </label>
+                        <select id="web-type" class="form-select bg-dark text-light" aria-label="Default select example" name="web-type">
+                            <option selected>Portfolio</option>
+                            <option value="1">Business Profile</option>
+                            <option value="1">Organization Profile</option>
+                            <option value="1">Community Profile</option>
+                            <option value="1">Company Profile</option>
+                            <option value="1">Landing Page</option>
+                            <option value="1">Web UI & UX Conversion</option>
+                        </select>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control bg-dark text-light" placeholder="Leave a comment here" id="web-description" style="height: 100px" name="description"></textarea>
+                        <label for="floatingTextarea2">Web description</label>
+                    </div>
+                    <div class="term">
+                        <button type="button" class="btn btn-warning mb-3 term-btn">Term & condition</button>
+                        <div class="term-list mb-2">
+                            <ol>
+                                <li>50% fee upfront, another 50% just before we deliver the admin credentials for the live site.</li>
+                                <li>no revision after the number of available revisions runs out.</li>
+                                <li>We do not share your private data.</li>
+                            </ol>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input my-checkbox" type="checkbox" onclick="isChecked()" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              I have read term & condition.  (the button will appear if the checkbox is checked)
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" name="submit" class="btn btn-primary btn-submit">Submit & order</button>
+                    <button class="btn btn-primary d-none btn-loading" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                    </button>
+                  </form>
+                  <div class="alert alert-success mt-3 mb-5 d-none" role="alert">
+                    <h4 class="alert-heading">Well done!</h4>
+                    <p>thanks for the order, then I will review your request and I will let you know the results as soon as possible via email or whatsapp that you submitted.</p>
+                    <hr>
+                    <p class="mb-0">to confirm the order, I will contact you via whatsapp no later than 1 x 24 hours. See you :)</p>
+                  </div>
+                  <hr style="margin-top: 50px;">
+                  <div class="web-sections-exp">
+                      <h3 style="margin-right: 30px;">web sections info : </h3>
+                      <div class="sdc open sec-btn">Home section</div>
+                      <div class="sdc open sec-btn">About section</div>
+                      <div class="sdc open sec-btn">Services section (Optional)</div>
+                      <div class="sdc open sec-btn">Portfolio section</div>
+                      <div class="sdc open sec-btn">Contact section</div>
+                      <div class="sdc open sec-btn">Full page view</div>
+                  </div>
+                  <hr style="margin-top: 50px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="full-page-over section-detail">
+        <div class="sec-det-tgl">
+            <div class="sdtc sdtc-1"><div class="sd-a"></div></div>
+            <div class="sdtc sdtc-2"><div class="sd-b"></div></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 for-img">
+                    <div class="img-placer">
+                        <img src="img/Home.png" alt="homepage" width="100%">
+                    </div>
+                </div>
+                <div class="col-sm-4 d-flex align-items-center">
+                    <p class="ms-3 text-light mt-3" style="font-size: 16px;">Home or homepage is the first part of a website page that contains information in the form of a greeting, introduction, brief description, website status, menu list, and logo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="full-page-over section-detail" style="z-index: 91;">
+        <div class="sec-det-tgl">
+            <div class="sdtc sdtc-1"><div class="sd-a"></div></div>
+            <div class="sdtc sdtc-2"><div class="sd-b"></div></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 for-img">
+                    <div class="img-placer">
+                        <img src="img/About.png" alt="homepage" width="100%">
+                    </div>
+                </div>
+                <div class="col-sm-6 d-flex align-items-center">
+                    <p class="ms-3 text-light" style="font-size: 16px;">the "about" section is the section that contains the website owner's profile. This section can contain brief information such as name, origin or address, contact, expertise, products and offers, skills, curriculum vitae, history, and so on.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="full-page-over section-detail" style="z-index: 92;">
+        <div class="sec-det-tgl">
+            <div class="sdtc sdtc-1"><div class="sd-a"></div></div>
+            <div class="sdtc sdtc-2"><div class="sd-b"></div></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 for-img">
+                    <div class="img-placer">
+                        <img src="img/Services.png" alt="homepage" width="100%">
+                    </div>
+                </div>
+                <div class="col-sm-4 d-flex align-items-center">
+                    <p class="ms-3 text-light" style="font-size: 16px;">the "services" section is the section that contains all the offers you provide to your website visitors. The offer can be in the form of services or products. this section is usually used by people who have certain skills that he can offer to others. for that this section is an optional section only and can be used if needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="full-page-over section-detail" style="z-index: 93;">
+        <div class="sec-det-tgl">
+            <div class="sdtc sdtc-1"><div class="sd-a"></div></div>
+            <div class="sdtc sdtc-2"><div class="sd-b"></div></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 for-img">
+                    <div class="img-placer">
+                        <img src="img/Portfolio.png" alt="homepage" width="100%">
+                    </div>
+                </div>
+                <div class="col-sm-4 d-flex align-items-center">
+                    <p class="ms-3 text-light" style="font-size: 16px;">the "portfolio" section is the section that displays the works or projects that you have completed with the intent and purpose for website visitors to know the results of your work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="full-page-over section-detail" style="z-index: 94;">
+        <div class="sec-det-tgl">
+            <div class="sdtc sdtc-1"><div class="sd-a"></div></div>
+            <div class="sdtc sdtc-2"><div class="sd-b"></div></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 for-img">
+                    <div class="img-placer">
+                        <img src="img/Footer __ Contact.png" alt="homepage" width="100%">
+                    </div>
+                </div>
+                <div class="col-sm-4 d-flex align-items-center">
+                    <p class="ms-3 text-light" style="font-size: 16px;">the "footer" or "contact" section is the bottom part of the website page which contains information in the form of address, location, contact, links, menu list, logo, and comment form.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="full-page-over section-detail full-page-view" style="z-index: 94;">
+        <div class="sec-det-tgl">
+            <div class="sdtc sdtc-1"><div class="sd-a"></div></div>
+            <div class="sdtc sdtc-2"><div class="sd-b"></div></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 for-img">
+                    <div class="img-placer">
+                        <img src="img/full page view.png" alt="homepage" width="100%">
+                    </div>
+                </div>
+                <div class="col-sm-4 d-flex align-items-start">
+                    <p class="ms-3 text-light" style="font-size: 16px;">illustration of the appearance of all web pages from top to bottom. consists of home, about, services, portfolio, and contacts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    &copy; medooo 2021.
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+      <script src="script.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
